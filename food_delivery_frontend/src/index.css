@@ -1,0 +1,16 @@
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
+code {
+  font-family: 'Fira Mono', 'Consolas', 'Monaco', monospace;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
