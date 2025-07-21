@@ -1,0 +1,60 @@
+.navbar {
+  width: 100%;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 1.2rem;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0; z-index: 20;
+  font-size: 1rem;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  margin-right: 1rem;
+}
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.navbar-links a { text-decoration: none; color: var(--text-primary); position: relative; }
+.navbar-links a.active { color: var(--text-secondary); }
+.cart-badge {
+  background: var(--button-bg);
+  color: #fff;
+  font-size: 0.8em;
+  padding: 0.1em 0.45em;
+  border-radius: 10px;
+  position: relative;
+  top: -8px;
+  left: -3px;
+}
+.btn {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  margin: 0 3px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn.small { font-size: 0.90em; padding: 5px 10px; }
+.btn.large { font-size: 1.1em; padding: 10px 28px; }
+.btn.danger { background: #d32f2f; }
+.btn.primary { background: var(--kavia-orange, #ff5722); }
+.theme-toggle-navbar {
+  background: none; border: none; font-size: 1.1em; margin: 0 7px;
+}
+.sidebar-toggle { background: none; border: none; font-size: 1.6em; margin-right: 8px; }
+@media (max-width: 600px) {
+  .navbar-links { gap: 0.25rem; font-size: 0.92em; }
+  .navbar { padding: 0.6rem 0.5rem; }
+}
